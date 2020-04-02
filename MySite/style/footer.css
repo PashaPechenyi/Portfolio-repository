@@ -1,0 +1,91 @@
+/** Footer  **/
+
+.footer {
+  background-color: #141414;
+  color: #fff;
+  font-size: 14px;
+  min-height: 200px;
+  line-height: 1.5em;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  cursor: default;
+}
+
+/* .footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+} */
+
+.footer_contacts {
+  width: 60%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 30px 30px 60px;
+}
+
+.footer_contacts1{
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer_contactsBold {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer_column {
+  text-align: left;
+  display: flex;
+
+  justify-content: space-between;
+  padding-right: 20px;
+  width: 40%;
+}
+
+.footer_columnProjects {
+  display: flex;
+  justify-content: center;
+
+  flex-grow: 1;
+}
+.footer_columnNews {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.footer_columnFacebook {
+  display: flex;
+  justify-content: center;
+
+  flex-grow: 2;
+}
+
+@media screen and (max-width: 900px) {
+  .footer_contacts {
+    width: 100%;
+    padding-right: 60px;
+  }
+  .footer_column {
+    padding-left: 60px;
+    width: 100%;
+  }
+
+  .footer_columnProjects {
+    justify-content: left;
+  }
+}
+
+

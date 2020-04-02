@@ -1,0 +1,33 @@
+/*  Achievements  */
+
+.achievements {
+  text-align: center;
+  background-color: #f5f5f5;
+  min-height: 250px;
+  padding: 80px 10px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  color: #191919;
+  font-size: 40px;
+}
+
+.achievements_elem {
+  width: 270px;
+  margin: o auto;
+  padding: 10px;
+}
+
+.achievements_name {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  color: #191919;
+  margin: 13px 0 8px;
+}
