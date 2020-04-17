@@ -31,10 +31,9 @@
   justify-content: center;
   flex-direction: row;
   width: 265px;
-}
-
-.facts_elem > div {
-  padding-left: 20px;
+  div {
+    padding-left: 20px;
+  }
 }
 
 .facts_elem_num {
@@ -46,11 +45,8 @@
   font-size: 12px;
 }
 
-@media screen and (max-width:555px){
+@media screen and (max-width: 555px) {
   .facts_elem {
-  
     justify-content: flex-start;
-    
-   
   }
 }

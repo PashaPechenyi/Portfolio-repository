@@ -1,0 +1,389 @@
+body {
+  background: #282828;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #787878;
+  line-height: 1.4em;
+}
+
+main {
+  background: #fff;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+/* Container */
+.marginTB {
+  padding-bottom: 20px;
+  padding-top: 25px;
+}
+
+.container1 {
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.alignBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  Header */
+/*Header Inner*/
+header {
+  position: relative;
+}
+
+.header {
+  padding-top: 30px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header_inner {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo > p {
+  font-size: 2em;
+}
+
+/*  NAV  */
+.header_nav > a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #191919;
+  text-decoration: none;
+  margin: 0px 20px;
+}
+
+.header_nav > a:hover {
+  color: #10c9c3;
+}
+
+/* ====Header_nav color==== */
+.nav_link_activ {
+  color: #10c9c3 !important;
+  position: relative;
+}
+
+.nav_link_activ:hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 100%;
+  right: 0;
+  height: 3px;
+  background-color: #10c9c3;
+}
+
+/* intro */
+h1 {
+  font-size: 38px;
+  color: #1d1d1d;
+  margin-bottom: 30px;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.header_intro {
+  background: url(../../../pages/images/headerPhoto1.jpg) 0 -90px;
+  background-size: 1200px;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.intro {
+  padding-right: 80px;
+  padding-left: 30px;
+  max-width: 470px;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+}
+
+.intro_button {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  background-color: #10c9c3;
+  border: 0;
+  margin-top: 30px;
+}
+.intro_button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white !important;
+  height: 100%;
+  cursor: pointer;
+  padding: 20px 45px;
+}
+
+.intro_button:active {
+  box-shadow: 1px 3px 7px #777;
+}
+
+@media screen and (max-width: 700px) {
+  .intro {
+    padding-right: 7px;
+  }
+
+  .header_intro {
+    align-items: center;
+  }
+}
+/** Footer  **/
+.footer {
+  background-color: #141414;
+  color: #fff;
+  font-size: 14px;
+  min-height: 200px;
+  line-height: 1.5em;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  cursor: default;
+}
+
+.footer_contacts {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 30px 30px 60px;
+}
+
+.footer_contacts1 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer_contactsBold {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer_column {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  width: 40%;
+}
+
+.footer_columnProjects {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.footer_columnNews {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.footer_columnFacebook {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+@media screen and (max-width: 900px) {
+  .footer_contacts {
+    width: 100%;
+    padding-right: 60px;
+  }
+
+  .footer_column {
+    padding-left: 60px;
+    width: 100%;
+  }
+
+  .footer_columnProjects {
+    justify-content: left;
+  }
+}
+/*  contactsPage  */
+.contactsPage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #787878;
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+.contactsPage_block {
+  padding-left: 15px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 318px;
+  order: -2;
+}
+
+.contactsPage_block > div {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.contactsPage_block h2 {
+  font-size: 30px;
+  color: #171717;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.contactsPage b {
+  font-weight: 700;
+  color: #171717;
+}
+
+.form_margin_bottom {
+  margin-top: -30px;
+}
+
+.form_block {
+  margin: 0 15px;
+  width: 57%;
+  padding-bottom: 20px;
+  min-height: 480px;
+}
+
+.form_personalData {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.form_block textarea {
+  border: 0;
+  margin-top: 20px;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  max-height: 400px;
+  max-width: 100%;
+  resize: none;
+}
+
+.form_block input {
+  border: 0;
+  font-size: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form_personalData input {
+  width: 46%;
+  height: 50px;
+}
+
+#Title {
+  width: 100%;
+  height: 50px;
+}
+
+#Comment {
+  width: 100%;
+  height: 170px;
+}
+
+.form_button {
+  margin: 20px 0 0;
+}
+
+.contactMap {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.contactMap_align {
+  width: 80%;
+}
+
+.contactMap img {
+  width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .contactsPage {
+    flex-wrap: wrap;
+  }
+
+  .form_block {
+    width: 90%;
+    padding-left: 30px;
+  }
+
+  .form_personalData input {
+    width: 100%;
+    height: 50px;
+  }
+
+  .contactsPage_block {
+    width: 100%;
+  }
+
+  .contactsPage_block > div {
+    padding: 15px 0;
+    width: 85%;
+  }
+
+  .contactsPage_block > div {
+    padding: 60px 0;
+    width: 85%;
+  }
+
+  .contactsPage_image {
+    width: 100%;
+    order: 2;
+  }
+
+  .contactMap_align {
+    width: 92%;
+  }
+}
+
+/*# sourceMappingURL=Contacts.css.map */

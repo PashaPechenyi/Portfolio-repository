@@ -32,27 +32,29 @@
   display: flex;
   justify-content: center;
   width: 60%;
-}
 
-.video iframe {
-  width: 100%;
-  height: 356px;
+  iframe {
+    width: 100%;
+    height: 356px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .video {
     width: 80%;
-  }
-  .video iframe {
-    height: 334px;
+
+    iframe {
+      height: 334px;
+    }
   }
 }
 
 @media screen and (max-width: 580px) {
   .video {
     width: 100%;
-  }
-  .video iframe {
-    height: 296px;
+
+    iframe {
+      height: 296px;
+    }
   }
 }

@@ -15,6 +15,27 @@
 .form_block {
   margin: 0 15px;
   width: 640px;
+
+  textarea{
+    border: 0;
+  
+    margin-top: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-family: "Montserrat", sans-serif;
+    max-height: 400px;
+    max-width: 100%;
+    resize: none;
+  }
+
+  input {
+    border: 0;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 .form_personalData {
@@ -22,33 +43,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
+
+  input {
+    width: 300px;
+    height: 50px;
+  }
 }
 
-.form_block textarea {
-  border: 0;
-
-  margin-top: 20px;
-  font-size: 15px;
-  padding-left: 20px;
-  padding-top: 15px;
-  font-family: "Montserrat", sans-serif;
-  max-height: 400px;
-  max-width: 100%;
-  resize: none;
-}
-
-.form_block input {
-  border: 0;
-  font-size: 15px;
-  padding-left: 20px;
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.form_personalData input {
-  width: 300px;
-  height: 50px;
-}
 
 #Title {
   width: 100%;

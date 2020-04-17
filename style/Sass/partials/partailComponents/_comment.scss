@@ -49,11 +49,11 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
-}
-.navComment_block a {
-  cursor: pointer;
-  color: #fff;
-  position: relative;
+  a {
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+  }
 }
 
 .navComment_1:hover,
@@ -111,30 +111,33 @@
   padding-top: 50px;
 
   opacity: 0;
+
+  h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .activComment {
+    text-decoration: underline solid #10c6c9;
+  }
+  
+  li {
+    cursor: pointer;
+    margin-top: 8px;
+
+    span {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    span:hover {
+      text-decoration: underline solid #fff;
+    }
+  }
+  
 }
 
-.navComment_menu h3 {
-  font-size: 26px;
-  margin-bottom: 20px;
-}
 
-.navComment_menu li {
-  cursor: pointer;
-  margin-top: 8px;
-}
-
-.navComment_menu li span {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.navComment_menu li span:hover {
-  text-decoration: underline solid #fff;
-}
-
-.navComment_menu .activComment {
-  text-decoration: underline solid #10c6c9;
-}
 @media screen and (max-width: 700px) {
   .navComment_menu {
     min-height: 430px;
